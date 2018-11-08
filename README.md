@@ -20,3 +20,13 @@ To run a Jupyter server with your home directory as the base directory (assumes 
 A browser window showing your home directory should then open automatically (if not, the console log contains a URL that you can visit with your browser). You can then navigate through your home directory and create new Jupyter notebooks, or view existing notebooks.
 
 Note that you can switch notebook cells to Python 2 mode with the magic command `%%python2`.
+
+## Windows
+
+A virtualenv with Jupyter can be set up also on Windows:
+
+    C:/python37/Scripts/pip.exe install virtualenv
+    virtualenv jupyter
+    cd jupyter/Scripts
+    activate.bat
+    pip install jupyter
