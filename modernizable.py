@@ -27,7 +27,7 @@ filename = "test.txt"
 with open(filename, "w") as f:
     print >>f, "This is the first line of the file :-)"
     print >>f, "This is line number", 2
-	
+
 
 ### Exercise 2
 
@@ -72,7 +72,7 @@ def delete_false_items(d):
     for k in d.keys():
         if not d[k]:
             del d[k]
-            
+
 d = {1: True, 2: False, 3: True, 4: False, 5: True, 6: False}
 delete_false_items(d)
 print(d)
@@ -100,7 +100,7 @@ def binary_search(x, items, start=None, end=None):
         return binary_search(x, items, middle + 1, end)
     else:
         return binary_search(x, items, start, middle)
-    
+
 items = (2, 3, 4, 6, 7, 9, 12)
 
 # Find numbers between 1 and 13 which are not in 'items'
