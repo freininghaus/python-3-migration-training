@@ -1,4 +1,5 @@
-### Exercise 1
+### Exercise 1
+
 # 1.1
 
 print "Hello",
@@ -26,13 +27,12 @@ filename = "test.txt"
 with open(filename, "w") as f:
     print >>f, "This is the first line of the file :-)"
     print >>f, "This is line number", 2
-	
+	
+
 ### Exercise 2
 
-from __future__ import print_function
-
 def print_type_and_value(x):
-    print(type(x), x)
+    print type(x), x
 
 print_type_and_value(range(10))
 
@@ -46,20 +46,17 @@ print_type_and_value(d.keys())
 print_type_and_value(d.values())
 print_type_and_value(d.items())
 
-
-from __future__ import print_function
-
-def print_type_and_value(x):
-    print(type(x), x)
-
 print_type_and_value(xrange(10))
 
 d = {"a": 1, "b": 2}
 print_type_and_value(d.iterkeys())
 print_type_and_value(d.itervalues())
 print_type_and_value(d.iteritems())
-
-# 2.1def min_max(items):
+
+
+# 2.1
+
+def min_max(items):
     return min(items), max(items)
 
 def is_even(n):
@@ -67,8 +64,10 @@ def is_even(n):
 
 print(min_max(filter(is_even, [1, 2, 3, 4, 5])))
 
-
-# 2.2
+
+
+# 2.2
+
 def delete_false_items(d):
     for k in d.keys():
         if not d[k]:
@@ -78,10 +77,14 @@ d = {1: True, 2: False, 3: True, 4: False, 5: True, 6: False}
 delete_false_items(d)
 print(d)
 
-
-### Exercise 3
-print type(3 / 2), 3 / 2
-# 3.1
+
+
+### Exercise 3
+
+print type(3 / 2), 3 / 2
+
+# 3.1
+
 def binary_search(x, items, start=None, end=None):
     """Returns True if and only if x is found in items[start:end]. If start"""
     if start is None:
@@ -102,11 +105,14 @@ items = (2, 3, 4, 6, 7, 9, 12)
 
 # Find numbers between 1 and 13 which are not in 'items'
 print(tuple(x for x in range(1, 14) if not binary_search(x, items)))
- 
-### Exercise 4
+ 
+
+### Exercise 4
+
 def print_and_round(x):
     print("round({}) == {}".format(x, round(x)))
 
 for x in (-3.5, -2.5, -1.5, -0.5, 0.5, 1.5, 2.5, 3.5):
     print_and_round(x)
-
+
+
