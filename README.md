@@ -29,4 +29,4 @@ A virtualenv with Jupyter can be set up also on Windows:
     virtualenv jupyter
     cd jupyter/Scripts
     activate.bat
-    pip install jupyter
+    pip install jupyter modernize
