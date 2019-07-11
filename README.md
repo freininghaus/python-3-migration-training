@@ -12,6 +12,10 @@ To set up the working environment on Linux in a virtualenv, run the following co
     . bin/activate
     pip3 install jupyter modernize
 
+Instead of telling pip3 the packages to install explicitly on the command line, you can also use the file `requirements.txt` from this repository:
+
+    pip3 install -r requirements.txt
+
 To run a Jupyter server with your home directory as the base directory (assumes that the virtualenv is already activated as above):
 
     cd ~
