@@ -1,4 +1,6 @@
 # python-3-migration-training
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/freininghaus/python-3-migration-training/master)
+
 This repository contains examples for differences between Python 2 und Python 3. These are used for a training organized by Thomas Weber and Frank Reininghaus at work.
 
 # Setting up the working environment
